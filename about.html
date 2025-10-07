@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Alwin Antony Babu</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    #about {
+      min-height: 100vh;
+      padding: 100px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1100px;
+      gap: 40px;
+    }
+    .about-container img {
+      width: 300px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 4px solid #f72c74;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .about-container img:hover {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    .about-content {
+      flex: 1;
+    }
+    .about-content h2 {
+      font-size: 2rem;
+      color: #f72c74;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .about-content h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #f72c74;
+      margin-top: 6px;
+      border-radius: 2px;
+    }
+    .about-content h3 {
+      font-size: 1.3rem;
+      color: #000000;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .about-content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: #000000;
+    }
+    .about-content p strong {
+      color: #f72c74;
+    }
+
+    /* Skills Highlight Strip */
+    .skills-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .skills-strip span {
+      background: #222;
+      color: #f72c74;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      border: 1px solid #f72c74;
+      transition: all 0.3s ease;
+    }
+    .skills-strip span:hover {
+      background: #f72c74;
+      color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Alwin <span>Antony Babu</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="other-certificates.html">Other Certificates</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <img src="assets/alwin2.jpg" alt="Alwin Antony Babu">
+      <div class="about-content">
+        <h2>ABOUT ME</h2>
+        <h3>🚀 ALWIN ANTONY BABU — BCA Student | Tech Enthusiast</h3>
+        <p>
+          Hi, I’m <strong>Alwin Antony Babu</strong> — a driven and curious BCA student with a deep passion for 
+          <strong>Artificial Intelligence</strong>, <strong>Cybersecurity</strong>, and <strong>Modern Web Development</strong>.  
+          I specialize in transforming ideas into impactful, real-world solutions.
+        </p>
+        <p>
+          From developing an <strong>Online Home IoT Store</strong> to creating a 
+          <strong>College Election Management System</strong>, I’ve designed and built projects that solve practical problems.  
+          My journey is fueled by curiosity and a strong drive to keep learning and pushing the boundaries of technology.
+        </p>
+        <p>
+          Beyond coding, I’m passionate about <strong>Robotics</strong>, <strong>AI-driven solutions</strong>, and exploring the 
+          intersection of <strong>human creativity</strong> and <strong>machine intelligence</strong>.
+        </p>
+
+        <!-- Skills Strip -->
+        <div class="skills-strip">
+          <span>AI</span>
+          <span>Cybersecurity</span>
+          <span>MERN Stack</span>
+          <span>Python</span>
+          <span>Robotics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>

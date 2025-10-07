@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications - Alwin Antony Babu</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Certifications Page */
+    #certifications {
+      background: #111;
+      min-height: 100vh;
+      padding: 100px 20px 60px;
+      color: #fff;
+    }
+    #certifications h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #f72c74;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+
+    /* Grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .cert-card {
+      background: #1c1c1c;
+      color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cert-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    /* Images inside cards */
+    .cert-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain; /* keeps aspect ratio */
+      background: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    /* Certificate title */
+    .cert-card p {
+      padding: 12px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1rem;
+      color: #f1f1f1;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top:0; left:0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.95);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .lightbox img {
+      max-width: 95%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    .close {
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      color: #fff;
+      font-size: 35px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .close:hover { color: #f72c74; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Alwin <span>Antony Babu</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="certifications.html" class="active">Certifications</a></li>
+      <li><a href="other-certificates.html">Other Certificates</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>My Certifications</h2>
+    <div class="cert-grid">
+      <a href="#c1" class="cert-card"><img src="assets/Cybersecurity.png"><p>Cyber Security & Ethical Hacking</p></a>
+      <a href="#c2" class="cert-card"><img src="assets/robotics.png"><p>Robotics</p></a>
+      <a href="#c3" class="cert-card"><img src="assets/data analysis.png"><p>Python For Data Analysis</p></a>
+      <a href="#c4" class="cert-card"><img src="assets/Hack2skill-Certificate.png"><p>AI Builders Lab (Google)</p></a>
+      <a href="#c5" class="cert-card"><img src="assets/mernai.png"><p>MERN Stack Development with AI (Internship)</p></a>
+      <a href="#c6" class="cert-card"><img src="assets/Internship 5 days.jpg"><p>5 Day AI Internship (AccelerateX)</p></a>
+      <a href="#c8" class="cert-card"><img src="assets/icaet.png"><p>AI in Autonomous Vehicles (Conference)</p></a>
+    </div>
+  </section>
+
+  <!-- Lightboxes -->
+  <div id="c1" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/Cybersecurity.png"></div>
+  <div id="c2" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/robotics.png"></div>
+  <div id="c3" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/data analysis.png"></div>
+  <div id="c4" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/Hack2skill-Certificate.png"></div>
+  <div id="c5" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/mernai.png"></div>
+  <div id="c6" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/Internship 5 days.jpg"></div>
+  <div id="c8" class="lightbox"><a href="#" class="close">&times;</a><img src="assets/icaet.png"></div>
+
+</body>
+</html>

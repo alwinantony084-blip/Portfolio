@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Alwin Antony Babu</title>
+  <link rel="stylesheet" href="about.css"> <!-- Common Navbar CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    #resume {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+      text-align: center;
+    }
+    #resume h2 {
+      font-size: 2rem;
+      color: #f72c74;
+      margin-bottom: 30px;
+    }
+    .resume-container {
+      max-width: 650px; /* smaller width */
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    .resume-container img {
+      width: 100%;
+      max-height: 900px; /* prevents it from being too tall */
+      border-radius: 10px;
+      object-fit: contain;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #f72c74;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #ff4d94;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Alwin <span>Antony Babu</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="other-certificates.html">Other Certificates</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <div class="resume-container">
+      <img src="assets/Alwin_Antony_CV.jpg" alt="Alwin Antony Resume">
+    </div>
+
+    <!-- Download Button -->
+    <div style="text-align:center;">
+      <a href="assets/Alwin_Antony_CV.jpg" download class="download-btn">
+        <i class="fa-solid fa-download"></i> Download Resume (Image)
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
