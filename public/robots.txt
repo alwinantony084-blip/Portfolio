@@ -1,0 +1,36 @@
+# Robots.txt for Alwin Antony Babu's Portfolio
+# https://alwinantonybabu.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://alwinantonybabu.vercel.app/sitemap.xml
+
+# Allow all major search and AI crawlers explicitly (SEO, AEO, GEO)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
